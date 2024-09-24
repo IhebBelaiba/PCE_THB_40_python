@@ -5,8 +5,7 @@ import decimal
 class PCE_THB_40:
     serial = None
 
-    def __init__(self, fname, smpl):
-        sampling = smpl
+    def __init__(self, fname):
         PCE_THB_40.serial = serial.Serial(
             port=fname,
             baudrate=9600,
